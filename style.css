@@ -1,0 +1,43 @@
+body {
+  font: helvetica, sans-serif;
+  font-size: 25px;
+  text-align: center;
+  border: 15px dotted;
+  color: #63FBF4;
+  background-image:  url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/3ac5b424607907.5633711d47ccf.jpg");
+  padding: 300px;
+  padding-top: 135px;
+  background-color: rgb(255,255,255);
+}
+
+h1 {
+  font-family: Lucinda Console, sans-serif;
+  font-size: 65px;
+  letter-spacing: 35px;
+  margin-top: 2px;
+}
+
+h2 {
+  font-family: Lucinda Console, sans-serif;
+  font-size: 40px;
+  letter-spacing: 15px;
+  margin-top: 15px;
+}
+
+p {
+  padding-left: 100px;
+  padding-right: 100px;
+  /*color: #EF2EF9;*/
+}
+
+address {
+  padding-bottom: 25px;
+  border-style: solid;
+
+}
+
+.wrapper {
+  background-color: black;
+  opacity: .3;
+}
+/*#EF2EF9 nice magenta color*/
