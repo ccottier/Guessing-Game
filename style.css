@@ -1,6 +1,6 @@
 body {
   font: helvetica, sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   border: 15px dotted;
   color: #63FBF4;
@@ -8,6 +8,7 @@ body {
   padding: 300px;
   padding-top: 135px;
   background-color: rgb(255,255,255);
+
 }
 
 h1 {
@@ -15,6 +16,9 @@ h1 {
   font-size: 65px;
   letter-spacing: 35px;
   margin-top: 2px;
+  background-color: black;
+  opacity: .7;
+  width: 100%;
 }
 
 h2 {
@@ -25,19 +29,20 @@ h2 {
 }
 
 p {
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 75px;
+  padding-right: 75px;
+  opacity: 1;
   /*color: #EF2EF9;*/
 }
 
 address {
   padding-bottom: 25px;
   border-style: solid;
-
 }
 
 .wrapper {
   background-color: black;
-  opacity: .3;
+  opacity: .7;
+  width: 100%;
 }
 /*#EF2EF9 nice magenta color*/
