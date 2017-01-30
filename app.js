@@ -50,20 +50,20 @@ if (color.toUpperCase() === myColor) {
   alert('Nice try, but green is actually my favorite color.  I love being surrounded by plants!');
 }
 
-// var myMovement = ['yoga', 'hiking', 'qi gong', 'dancing'];
-// var movement = prompt('Name one of my favorite forms of exercise.');
-//
-// if (myMovement.indexOf(movement)!== -1) {
-//   alert('You\'re right, ' + movement + ' is one of my favorite forms of exercise.');
-// } else {
-//   alert('That\'s not one of my favorites. I prefer yoga, qi goong, hiking, and dancing.');
-// }
-//
-//
-// var beverage = prompt('What is one of my favorite beverages?');
-//
-// if(beverage.toLowerCase === 'kombucha' || 'green smoothies' || 'coconut water' || 'herbal tea'){
-//   console.log('You guessed correct! My favorite beverages are kombucha, green smoothies, coconut water, and herbal tea.');
-// } else {
-//   console.log('That is incorrect.  We must have different taste in drinks.');
-// }
+var myMovement = ['yoga', 'hiking', 'qi gong', 'dancing'];
+var movement = prompt('Name one of my favorite forms of exercise.');
+
+if (myMovement.indexOf(movement)!== -1) {
+  alert('You\'re right, ' + movement + ' is one of my favorite forms of exercise.');
+} else {
+  alert('That\'s not one of my favorites. I prefer yoga, qi goong, hiking, and dancing.');
+}
+
+
+var beverage = prompt('What is one of my favorite beverages?');
+
+if(beverage.toLowerCase === 'kombucha' || 'green smoothies' || 'coconut water' || 'herbal tea'){
+  console.log('You guessed correct! My favorite beverages are kombucha, green smoothies, coconut water, and herbal tea.');
+} else {
+  console.log('That is incorrect.  We must have different taste in drinks.');
+}
