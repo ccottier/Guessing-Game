@@ -16,7 +16,6 @@ if (answerOne === myAnswerOne) {
 }
 
 
-
 var pet = prompt('Do I prefer dogs to cats?');
 var myPet = 'NO';
 
@@ -30,41 +29,44 @@ if (pet.toUpperCase() === myPet) {
 var answerThree = prompt('Am I a morning person?');
 var myAnswerThree = 'NO';
 
-if (answerThree.toUpperCase === myAnswerThree) {
+if (answerThree.toUpperCase() === myAnswerThree) {
   alert('Correct! I\'m more of a night owl.');
 } else {
   alert('Incorrect! I\'m not an early bird.');
 }
 
+var holiday = prompt('What is my favorite holiday?');
+var myHoliday = 'HALLOWEEN';
 
-var answerFour = prompt('Is purple my favorite color?');
-var myAnswerFour = 'NO';
+if (holiday.toUpperCase() === myHoliday) {
+  alert('Correct! I love costume parties!');
+} else {
+  alert('Wrong!  Halloween is my favorite holiday.');
+}
 
-if (answerFour.toUpperCase === myAnswerFour) {
+var color = prompt('Is purple my favorite color?');
+var myColor = 'NO';
+
+if (color.toUpperCase() === myColor) {
   alert('Correct! I love green.');
 } else {
-  alert('Nice try, but green is actually my favorite color.');
+  alert('Nice try, but green is actually my favorite color.  I love being surrounded by plants!');
 }
-// myAnswerFour()
 
-
-// var answerFive = prompt('Is Halloween my favorite holiday?');
-// myAnswerFive = ['Yes', || 'yes', || 'YES', || 'y', or 'Y'];
+// var myMovement = ['yoga', 'hiking', 'qi gong', 'dancing'];
+// var movement = prompt('Name one of my favorite forms of exercise.');
 //
-// if(answerFive ==== myAnswerFive) {
-//   console.log('Correct! Halloween is my favorite holiday.  I love costume parties!');
+// if (myMovement.indexOf(movement)!== -1) {
+//   alert('You\'re right, ' + movement + ' is one of my favorite forms of exercise.');
 // } else {
-//   console.log('Actually, my favorite holiday is Halloween!');
+//   alert('That\'s not one of my favorites. I prefer yoga, qi goong, hiking, and dancing.');
 // }
-// myHoliday ()
-
-
-var answerSix = prompt('What is one of my favorite beverages?');
-var myAnswerSix = ['kombucha', 'green smoothies', 'coconut water', 'herbal tea'];
-
-if(answerSix === myAnswerSix) {
-  console.log('You guessed correct! My favorite beverages are kombucha, green smoothies, coconut water, and herbal tea.');
-} else {
-  console.log('That is incorrect.  We must have different taste in drinks.');
-}
-// myBeverages ()
+//
+//
+// var beverage = prompt('What is one of my favorite beverages?');
+//
+// if(beverage.toLowerCase === 'kombucha' || 'green smoothies' || 'coconut water' || 'herbal tea'){
+//   console.log('You guessed correct! My favorite beverages are kombucha, green smoothies, coconut water, and herbal tea.');
+// } else {
+//   console.log('That is incorrect.  We must have different taste in drinks.');
+// }
