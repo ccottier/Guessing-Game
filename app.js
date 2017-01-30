@@ -2,11 +2,8 @@
 var userName = prompt('What\'s Your Name?');
 alert('Hello '+ userName +'\! Thanks for coming to my first website. Let\'s play a game so that you can get to know me a better.');
 
-// myFunction()
 
 var myAnswerOne = 'Pennsylvania';
-
-
 var answerOne = prompt('In which state was I born?');
 
 if (answerOne === myAnswerOne) {
