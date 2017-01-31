@@ -2,7 +2,6 @@ var count = 0;
 var correctAnswers =[];
 
 
-
 var userName = prompt('What\'s Your Name?');
 alert('Hello '+ userName +'\! Thanks for coming to my first website. Let\'s play a game so that you can get to know me a better.');
 
@@ -80,47 +79,29 @@ if(beverage.toLowerCase === 'kombucha' || 'green smoothies' || 'coconut water' |
 }
 
 
-
-
 function checkGuess() {
-
-    var yearsVegan = 18;
-    var counter = 0;
-    var correct = false;
-
-  while ((counter > 4) && (correct === false)) {
+  var yearsVegan = 18;
+  var counter = 0;
   var guess = prompt('Can you guess how many years I have been vegan?');
-  if(guess < yearsVegan) {
-    alert('You\'re guess is too low.');
+  while ((counter > 4) && (guess !== 18)) {
+    if(guess < yearsVegan) {
+      alert('You\'re guess is too low.');
+    }
+    if(guess > yearsVegan) {
+      alert('You\'re guess is too high');
+    }
+    if(guess === yearsVegan){
+      alert('You\'re correct! Great guess.');
+      count++;
+    }
+    if(counter < 4){
+      alert('Sorry, you ran out of guesses.  The answer was 18.');
+    }
   }
-  if(guess > yearsVegan) {
-    alert('You\'re guess is too high');
-  }
-  if(guess === yearsVegan){
-    alert('You\'re correct! Great guess.');
-    correct = true;
-  }
-  if(counter < 4){
-    alert('Sorry, you ran out of guesses.  The answer was 18.');
-  }
-}
 }
 checkGuess();
 
 
 
-
-  alert('You got ' + count + ' questions out of eight correct!  Thanks for playing.');
-// //This loop runs for each of 4 guesses//
-// if (guess === yearsVegan){
-//   alert('Great guess! You are correct!');
-// } else {
-//   alert('Please guess again.')
-//  }
-//
-//  if (counter === numGuess) {
-//    alert('Sorry, game over.');
-//  }
-// if(guess < yearsVegan){
-//   alert('You\'re guess is to low')
-// }
+correctAnswers = [count];
+alert('You got ' + count + ' questions out of eight correct!  Thanks for playing.');
