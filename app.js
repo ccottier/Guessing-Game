@@ -67,3 +67,44 @@ if(beverage.toLowerCase === 'kombucha' || 'green smoothies' || 'coconut water' |
 } else {
   console.log('That is incorrect.  We must have different taste in drinks.');
 }
+
+
+var yearsVegan = 18;
+var counter = 0;
+var correct = false;
+
+function checkGuess() {
+  for(var i =0; i <= 4; i++) {
+    // document.write(i);
+  }
+  while ((counter > 4) && (correct === false));
+  var guess = prompt('Can you guess how many years I have been vegan?');
+  if(guess < yearsVegan) {
+    alert('You\'re guess is too low.');
+  }
+  if(guess > yearsVegan) {
+    alert('You\'re guess is too high');
+  }
+  if(guess === yearsVegan){
+    alert('You\'re correct! Great guess.');
+    correct = true;
+  }
+  if(counter < 4){
+    alert('Sorry, you ran out of guesses.  The answer was 18.');
+  }
+}
+checkGuess();
+
+// //This loop runs for each of 4 guesses//
+// if (guess === yearsVegan){
+//   alert('Great guess! You are correct!');
+// } else {
+//   alert('Please guess again.')
+//  }
+//
+//  if (counter === numGuess) {
+//    alert('Sorry, game over.');
+//  }
+// if(guess < yearsVegan){
+//   alert('You\'re guess is to low')
+// }
