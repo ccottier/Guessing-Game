@@ -101,7 +101,20 @@ function checkGuess() {
 }
 checkGuess();
 
+var favStones = ['herkimer', 'black tourmaline', 'apatite', 'labrodorite', 'amethyst', 'selenite', 'pyrite'];
+  var sixGuesses = 0;
+  var counter = 0;
+  var stones = prompt('I\'ve been a rock hound since I was a young child.  Can you guess some of my favorite stones or crystals? I\'ll give you six guesses.');
+
+while((favStones.indexOf(stones)!== -1) && (sixGuesses > 6)) {
+    if(favStones.indexOf(stones) === 1) {
+      alert('You\'re right, ' + stones + ' is one of my favorites.  My other favorites include herkimer, black tourmaline, apatite, labrodorite, amethyst, selenite, and pyrite.');
+      count++;
+    }
+    if()
+      alert('That\'s not one of my favorites.  Please guess again.');
+  }
 
 
 correctAnswers = [count];
-alert('You got ' + count + ' questions out of eight correct!  Thanks for playing.');
+alert('You got ' + count + ' questions out of eight correct!  Thanks for playing ' + userName + '!');
