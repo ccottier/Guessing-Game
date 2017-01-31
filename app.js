@@ -69,13 +69,13 @@ if(beverage.toLowerCase === 'kombucha' || 'green smoothies' || 'coconut water' |
 }
 
 
-var yearsVegan = 18;
-var counter = 0;
-var correct = false;
+
 
 function checkGuess() {
-  for(var i =0; i <= 4; i++) {
-    // document.write(i);
+  for(var i = 0; i <= 4; i++) {
+    var yearsVegan = 18;
+    // var counter = 0;
+    var correct = false;
   }
   while ((counter > 4) && (correct === false));
   var guess = prompt('Can you guess how many years I have been vegan?');
@@ -95,6 +95,11 @@ function checkGuess() {
 }
 checkGuess();
 
+var arr ['Pennsylvania',  ]
+var counter = 0;
+for (var c = 0; c < arr.length; c++) {
+  alert('You got ' + arr.lenth + ' questions out of eight correct!  Thanks for playing.')
+}
 // //This loop runs for each of 4 guesses//
 // if (guess === yearsVegan){
 //   alert('Great guess! You are correct!');
