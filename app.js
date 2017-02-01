@@ -101,20 +101,43 @@ function checkGuess() {
 }
 checkGuess();
 
-var favStones = ['herkimer', 'black tourmaline', 'apatite', 'labrodorite', 'amethyst', 'selenite', 'pyrite'];
-  var sixGuesses = 0;
-  var counter = 0;
-  var stones = prompt('I\'ve been a rock hound since I was a young child.  Can you guess some of my favorite stones or crystals? I\'ll give you six guesses.');
+// var favStones = ['herkimer', 'black tourmaline', 'apatite', 'labrodorite', 'amethyst', 'selenite', 'pyrite'];
+//   var sixGuesses = 0;
+//   var stones = prompt('I\'ve been a rock hound since I was a young child.  Can you guess some of my favorite gemstones or crystals? I\'ll give you six guesses.');
+//
+// for(var s=0; s < 6; i++) {
+//   if ((favStones.indexOf(stones.toLowerCase)!== -1) && (sixGuesses < 6)) {
+//     if(favStones.indexOf(stones.toLowerCase) === 1) {
+//       alert('You\'re right, ' + stones + ' is one of my favorites.  My other favorites include herkimer, black tourmaline, apatite, labrodorite, amethyst, selenite, and pyrite.');
+//       count++;
+//   } else if {
+//       alert('That\'s not one of my favorites.  Please guess again.');
+//       sixGuesses++;
+//     }
+// while
+//       (sixGuesses > 6);
+//       alert('Sorry you ran out of guesses.  Most people don\'t love rocks & crystals as much as I do.  My favorites are herkimer, black tourmaline, apatite, labrodorite, amethyst, selenite, and pyrite.');
+//     }
+// favStones();
 
-while((favStones.indexOf(stones)!== -1) && (sixGuesses > 6)) {
-    if(favStones.indexOf(stones) === 1) {
-      alert('You\'re right, ' + stones + ' is one of my favorites.  My other favorites include herkimer, black tourmaline, apatite, labrodorite, amethyst, selenite, and pyrite.');
-      count++;
-    }
-    if()
-      alert('That\'s not one of my favorites.  Please guess again.');
+
+var favStones = ['herkimer', 'black tourmaline', 'apatite', 'labrodorite', 'amethyst', 'selenite', 'pyrite'];
+var stones = prompt('I\'ve been a rock hound since I was a young child.  Can you guess some of my favorite gemstones or crystals? I\'ll give you six guesses.');
+var s //counter
+for(var s=0; s < 6; i++) {
+while ((favStones.indexOf(stones.toLowerCase)!== -1) && (sixGuesses < 6)) {
+    if alert('That\'s not one of my favorites.  Please guess again.');
+
+  } else {
+    (favStones.indexOf(stones.toLowerCase) === 1)
+    alert('You\'re right, ' + stones + ' is one of my favorites.  My other favorites include herkimer, black tourmaline, apatite, labrodorite, amethyst, selenite, and pyrite.');
+    count++;
+  } else if {
+    (sixGuesses >= 6);
+    alert('Sorry you ran out of guesses.  Most people don\'t love rocks & crystals as much as I do.  My current favorites are herkimer, black tourmaline, apatite, labrodorite, amethyst, selenite, and pyrite.');
   }
 
+favStones();
 
 correctAnswers = [count];
 alert('You got ' + count + ' questions out of eight correct!  Thanks for playing ' + userName + '!');
