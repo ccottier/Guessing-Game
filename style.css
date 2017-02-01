@@ -5,7 +5,7 @@ body {
   border: 15px dotted;
   color: #63FBF4;
   background-image:  url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/3ac5b424607907.5633711d47ccf.jpg");
-  padding: 300px;
+  /*padding: 300px;*/
   padding-top: 135px;
   background-color: rgb(255,255,255);
 
@@ -47,9 +47,11 @@ ol {
 ul {
   list-style: none;
 }
-.wrapper {
+#wrapper {
+  margin-left:10%;
+  margin-right:10%;
   background-color: black;
   opacity: .7;
-  width: 100%;
+  /*width: 100%;*/
 }
 /*#EF2EF9 nice magenta color*/
