@@ -40,6 +40,13 @@ address {
   border-style: solid;
 }
 
+ol {
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+}
 .wrapper {
   background-color: black;
   opacity: .7;
