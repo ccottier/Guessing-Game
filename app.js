@@ -8,17 +8,18 @@ var userName = prompt('What\'s Your Name?');
 alert('Hello '+ userName +'\! Thanks for coming to my first website. Let\'s play a game so that you can get to know me better.');
 
 
-var myState = 'Pennsylvania';
-var state = prompt('In which state was I born?');
+function birthState() {
+  var myState = 'Pennsylvania';
+  var state = prompt('In which state was I born?');
 
-if (state === myState) {
-  alert('You\'re correct! I was born in the oldest hospital in the United States which was founded by Ben Franklin.');
-  count++;
-} else {
-  alert('Sorry, that was incorrect.  I was born in Philadelphia, PA.');
+  if (state === myState) {
+    alert('You\'re correct! I was born in the oldest hospital in the United States which was founded by Ben Franklin.');
+    count++;
+  } else {
+    alert('Sorry, that was incorrect.  I was born in Philadelphia, PA.');
+  }
 }
-// }
-// user();
+birthState();
 
 function cat(){
 
@@ -26,7 +27,7 @@ function cat(){
   var myPet = 'NO';
 
   if (pet.toUpperCase() === myPet) {
-    alert('Correct! I love cats.');
+    alert('Correct! I have two cats.');
     count++;
   } else {
     alert('Nope! I much prefer cats over dogs.');
@@ -82,6 +83,7 @@ function green(){
 
 green();
 
+
 function yoga(){
 
   var myMovement = ['yoga', 'hiking', 'qi gong', 'dancing'];
@@ -113,52 +115,97 @@ function kombucha(){
 
 kombucha();
 
+//
+// function checkGuess() {
+//   var yearsVegan = 18;
+//   for(var v = 0; v < 4; v++) {
+//   // var counter = 0;
+//   var guess = prompt('Can you guess how many years I have been vegan?');
+//   while ((v < 4) && (guess !== yearsVegan)) {
+//     if(guess < yearsVegan) {
+//       alert('You\'re guess is too low.');
+//     }
+//     if(guess > yearsVegan) {
+//       alert('You\'re guess is too high');
+//     }
+//     if(guess === yearsVegan){
+//       alert('You\'re correct! Great guess.');
+//       // count++;
+//     } else {
+//       alert('Sorry, you ran out of guesses. I have been a vegan for 18 years.');
+//     }
+//   }
+// }
+// checkGuess();
 
-function checkGuess() {
+// function checkGuess() {
+//   var yearsVegan = 18;
+//   var counter = 0;
+//   var guess = prompt('Can you guess how many years I have been vegan? You have 4 guesses');
+//   while ((counter < 4) && (guess !== yearsVegan)) {
+//     counter++;
+//     if(guess < yearsVegan) {
+//       alert('You\'re guess is too low.');
+//       counter++;
+//       } else if (guess > yearsVegan) {
+//         alert('You\'re guess is too high');
+//         // counter++;
+//       } else if (guess === yearsVegan) {
+//         alert('You\'re correct! Great guess.');
+//       // count++;
+//       } else {
+//         alert('Sorry, you ran out of guesses. I have been a vegan for 18 years.');
+//       }
+//   }
+// }
+// checkGuess();
+
+function vegan() {
   var yearsVegan = 18;
-  var counter = 0;
-  var guess = prompt('Can you guess how many years I have been vegan?');
-  while ((counter > 4) && (guess !== 18)) {
-    if(guess < yearsVegan) {
-      alert('You\'re guess is too low.');
-    }
-    if(guess > yearsVegan) {
-      alert('You\'re guess is too high');
-    }
-    if(guess === yearsVegan){
-      alert('You\'re correct! Great guess.');
+  var numGuesses = 0; //Keeps track of # of user Guesses.
+
+  while(numGuesses < 4) {
+    var userGuess = parseInt(prompt('Can you guess how long I have been a vegan?\n(You have ' + (4 - numGuesses) + ' guesses left.)'));
+    if(userGuess === yearsVegan) {
+      alert('You guessed correctly! I have been a vegan for 18 years.');
+      numGuesses = 4;
       count++;
+    } else if(userGuess < yearsVegan) {
+      alert('Too low! Guess again.');
+    } else if(userGuess > yearsVegan) {
+      alert('Too high! Guess again.');
+    } else {
+      alert('You ran out of guesses. I have been a vegan for 18 years.');
     }
-    if(counter < 4){
-      alert('Sorry, you ran out of guesses.  The answer was 18.');
-    }
+    numGuesses++;
   }
 }
-checkGuess();
+// (userGuess !== yearsVegan) {
+vegan();
 
-function labrodorite(){
-  var favStones = ['herkimer', 'black tourmaline', 'apatite', 'labrodorite', 'amethyst', 'selenite', 'pyrite'];
-  var sixGuesses = 0;
 
-  for(var s=0; s < 6; s++) {
-    var stones = prompt('I\'ve been a rock hound since I was a kid.  Can you guess any of my favorite gemstones? I\'ll give you six guesses.');
-    if ((favStones.indexOf(stones.toLowerCase())!== -1) && (sixGuesses < 6)) {
-      alert('You\'re right, ' + stones + ' is one of my favorites.  My other gemstones include herkimer, black tourmaline, apatite, labrodorite, amethyst, selenite, and pyrite.');
-      var s = 6;
-      count++;
-    } else if (favStones.indexOf(stones.toLowerCase) === -1) {
-      alert('That\'s not one of my favorites.  Please guess again.');
-      sixGuesses++;
+  function labrodorite(){
+    var favStones = ['herkimer', 'black tourmaline', 'apatite', 'labrodorite', 'amethyst', 'selenite', 'pyrite'];
+    var sixGuesses = 0;
+
+    for(var s=0; s < 6; s++) {
+      var stones = prompt('I\'ve been a rock hound since I was a kid.  Can you guess one of my favorite gemstones? You have six guesses.');
+      if ((favStones.indexOf(stones.toLowerCase())!== -1) && (sixGuesses < 6)) {
+        alert('You\'re right, ' + stones + ' is one of my favorites!  My other gemstones include herkimer, black tourmaline, apatite, labrodorite, amethyst, selenite, and pyrite.');
+        count++;
+      } else if (favStones.indexOf(stones.toLowerCase) === -1) {
+        alert('That\'s not one of my favorites.  Please guess again.');
+        sixGuesses++;
+      }
+    }
+    if(sixGuesses === 6){
+      alert('Sorry you ran out of guesses.  My favorites are herkimer, black tourmaline, apatite, labrodorite, amethyst, selenite, and pyrite.');
     }
   }
-  if(sixGuesses === 6){
-    alert('Sorry you ran out of guesses.  My favorites are herkimer, black tourmaline, apatite, labrodorite, amethyst, selenite, and pyrite.');
-  }
-}
 
-labrodorite();
+  labrodorite();
 
-count();
-prompt('What\'s Your Name?');
-// correctAnswers = [count];
-alert('You got ' + count + ' questions out of eight correct!  Thanks for playing ' + userName + '!');
+  count();
+  // prompt('What\'s Your Name?');
+  // // correctAnswers = [count];
+  alert('You got ' + count + ' questions out of eight correct!  Thanks for playing ' + userName + '!');
