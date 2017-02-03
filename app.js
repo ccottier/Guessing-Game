@@ -1,24 +1,24 @@
 var count = 0;
 // var correctAnswers = [];
 
-function name() {
+// function user() {
+//Try to use an iffe to make last alert in code work//
 
-  var userName = prompt('What\'s Your Name?');
-  alert('Hello '+ userName +'\! Thanks for coming to my first website. Let\'s play a game so that you can get to know me a better.');
+var userName = prompt('What\'s Your Name?');
+alert('Hello '+ userName +'\! Thanks for coming to my first website. Let\'s play a game so that you can get to know me a better.');
 
 
-  var myAnswerOne = 'Pennsylvania';
-  var answerOne = prompt('In which state was I born?');
+var myState = 'Pennsylvania';
+var state = prompt('In which state was I born?');
 
-  if (answerOne === myAnswerOne) {
-    alert('You\'re correct! I was born in the oldest hospital in the United States which was founded by Ben Franklin.');
-    count++;
-  } else {
-    alert('Sorry, that was incorrect.  I was born in Philadelphia, PA.');
-  }
+if (state === myState) {
+  alert('You\'re correct! I was born in the oldest hospital in the United States which was founded by Ben Franklin.');
+  count++;
+} else {
+  alert('Sorry, that was incorrect.  I was born in Philadelphia, PA.');
 }
-
-name()
+// }
+// user();
 
 function cat(){
 
@@ -33,14 +33,14 @@ function cat(){
   }
 }
 
-cat()
+cat();
 
 function nightOwl() {
 
-  var answerThree = prompt('Am I a morning person?');
-  var myAnswerThree = 'NO';
+  var morning = prompt('Am I a morning person?');
+  var myMorning = 'NO';
 
-  if (answerThree.toUpperCase() === myAnswerThree) {
+  if (morning.toUpperCase() === myMorning) {
     alert('Correct! I\'m more of a night owl.');
     count++;
   } else {
@@ -48,9 +48,9 @@ function nightOwl() {
   }
 }
 
-nightOwl()
+nightOwl();
 
-function Halloween(){
+function halloween(){
 
   var holiday = prompt('What is my favorite holiday?');
   var myHoliday = 'HALLOWEEN';
@@ -63,7 +63,7 @@ function Halloween(){
   }
 }
 
-Halloween()
+halloween();
 
 function green(){
 
@@ -78,7 +78,7 @@ function green(){
   }
 }
 
-green()
+green();
 
 function yoga(){
 
@@ -93,7 +93,7 @@ function yoga(){
   }
 }
 
-yoga()
+yoga();
 
 function kombucha(){
 
@@ -107,7 +107,7 @@ function kombucha(){
   }
 }
 
-kombucha()
+kombucha();
 
 function checkGuess() {
   var yearsVegan = 18;
@@ -146,12 +146,14 @@ function labrodorite(){
       sixGuesses++;
     }
   }
-  if(sixGuesses == 6){
-    alert('Sorry you ran out of guesses.  Most people don\'t love rocks & crystals as much as I do.  My favorites are herkimer, black tourmaline, apatite, labrodorite, amethyst, selenite, and pyrite.')
+  if(sixGuesses === 6){
+    alert('Sorry you ran out of guesses.  Most people don\'t love rocks & crystals as much as I do.  My favorites are herkimer, black tourmaline, apatite, labrodorite, amethyst, selenite, and pyrite.');
   }
 }
 
 labrodorite();
 
+count();
+prompt('What\'s Your Name?');
 // correctAnswers = [count];
 alert('You got ' + count + ' questions out of eight correct!  Thanks for playing ' + userName + '!');
