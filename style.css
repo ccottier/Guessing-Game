@@ -1,19 +1,33 @@
 body {
   font: helvetica, sans-serif;
   font-size: 20px;
+  font: helvetica, sans-serif;
+  font-size: 20px;
   text-align: center;
-  border: 15px dotted;
-  color: #63FBF4;
-  background-image:  url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/3ac5b424607907.5633711d47ccf.jpg");
-  /*padding: 300px;*/
+  border: solid;
+  border-color: #d4afcd;
+  border-width: 10px;
+  color: #d4afcd;
+  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/3ac5b424607907.5633711d47ccf.jpg);
+  /* padding: 300px; */
   padding-top: 135px;
+  padding-bottom: 45px;
   background-color: rgb(255,255,255);
+  /*background-color: rgb(255,255,255);*/
 
 }
 
 h1 {
   font-family: Lucinda Console, sans-serif;
+  text-align: center;
   font-size: 65px;
+  border-style: solid;;
+  border-top-color: #d4afcd;
+  border-left: none;
+  border right: none;
+  border-top-width: thin;
+  border-bottom-color: #d4afcd;
+  border-top-color: thin;
   letter-spacing: 35px;
   margin-top: 2px;
   background-color: black;
@@ -23,7 +37,7 @@ h1 {
 
 h2 {
   font-family: Lucinda Console, sans-serif;
-  font-size: 40px;
+  font-size: 25px;
   letter-spacing: 15px;
   margin-top: 15px;
 }
@@ -51,6 +65,9 @@ ul {
   margin-left:10%;
   margin-right:10%;
   background-color: black;
+  border: solid;
+  border-color: #d4afcd;
+  border-width: 5px;
   opacity: .7;
   /*width: 100%;*/
 }

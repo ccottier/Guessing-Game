@@ -5,7 +5,7 @@ var count = 0;
 //Try to use an iffe to make last alert in code work//
 
 var userName = prompt('What\'s Your Name?');
-alert('Hello '+ userName +'\! Thanks for coming to my first website. Let\'s play a game so that you can get to know me a better.');
+alert('Hello '+ userName +'\! Thanks for coming to my first website. Let\'s play a game so that you can get to know me better.');
 
 
 var myState = 'Pennsylvania';
@@ -22,7 +22,7 @@ if (state === myState) {
 
 function cat(){
 
-  var pet = prompt('Do I prefer dogs to cats?');
+  var pet = prompt('Do I prefer dogs over cats?');
   var myPet = 'NO';
 
   if (pet.toUpperCase() === myPet) {
@@ -34,6 +34,7 @@ function cat(){
 }
 
 cat();
+
 
 function nightOwl() {
 
@@ -49,6 +50,7 @@ function nightOwl() {
 }
 
 nightOwl();
+
 
 function halloween(){
 
@@ -85,22 +87,24 @@ function yoga(){
   var myMovement = ['yoga', 'hiking', 'qi gong', 'dancing'];
   var movement = prompt('Name one of my favorite forms of exercise.');
 
-  if (myMovement.indexOf(movement)!== -1) {
+  if (myMovement.indexOf(movement) !== -1) {
     alert('You\'re right, ' + movement + ' is one of my favorite forms of exercise.');
     count++;
   } else {
-    alert('That\'s not one of my favorites. I prefer yoga, qi goong, hiking, and dancing.');
+    alert('That\'s not one of my favorites. I prefer yoga, qi gong, hiking, and dancing.');
   }
 }
 
 yoga();
+
 
 function kombucha(){
 
   var beverage = prompt('What is one of my favorite beverages?');
 
   if(beverage.toLowerCase === 'kombucha' || 'green smoothies' || 'coconut water' || 'herbal tea'){
-    console.log('You guessed correct! My favorite beverages are kombucha, green smoothies, coconut water, and herbal tea.');
+    alert('You\'re correct! My favorite beverages are kombucha, green smoothies, coconut water, and herbal tea.');
+    console.log('You\'re correct! My favorite beverages are kombucha, green smoothies, coconut water, and herbal tea.');
     count++;
   } else {
     console.log('That is incorrect.  We must have different taste in drinks.');
@@ -108,6 +112,7 @@ function kombucha(){
 }
 
 kombucha();
+
 
 function checkGuess() {
   var yearsVegan = 18;
@@ -136,9 +141,9 @@ function labrodorite(){
   var sixGuesses = 0;
 
   for(var s=0; s < 6; s++) {
-    var stones = prompt('I\'ve been a rock hound since I was a young child.  Can you guess some of my favorite gemstones or crystals? I\'ll give you six guesses.');
+    var stones = prompt('I\'ve been a rock hound since I was a kid.  Can you guess any of my favorite gemstones? I\'ll give you six guesses.');
     if ((favStones.indexOf(stones.toLowerCase())!== -1) && (sixGuesses < 6)) {
-      alert('You\'re right, ' + stones + ' is one of my favorites.  My other favorites include herkimer, black tourmaline, apatite, labrodorite, amethyst, selenite, and pyrite.');
+      alert('You\'re right, ' + stones + ' is one of my favorites.  My other gemstones include herkimer, black tourmaline, apatite, labrodorite, amethyst, selenite, and pyrite.');
       var s = 6;
       count++;
     } else if (favStones.indexOf(stones.toLowerCase) === -1) {
@@ -147,7 +152,7 @@ function labrodorite(){
     }
   }
   if(sixGuesses === 6){
-    alert('Sorry you ran out of guesses.  Most people don\'t love rocks & crystals as much as I do.  My favorites are herkimer, black tourmaline, apatite, labrodorite, amethyst, selenite, and pyrite.');
+    alert('Sorry you ran out of guesses.  My favorites are herkimer, black tourmaline, apatite, labrodorite, amethyst, selenite, and pyrite.');
   }
 }
 
