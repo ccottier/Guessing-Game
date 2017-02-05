@@ -1,6 +1,13 @@
-header {
-  border-top: solid, thin;
+ul {
+  padding-left: 0;
+}
+
+header h1 {
+  border-top: solid 5px;
+  border-bottom: solid 5px;
   font-size: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 body {
@@ -19,7 +26,10 @@ body {
   padding-bottom: 45px;
   background-color: rgb(255,255,255);
   /*background-color: rgb(255,255,255);*/
+}
 
+body li strong {
+  letter-spacing: 5px;
 }
 
 h1 {
@@ -34,9 +44,9 @@ h1 {
   border-bottom-color: #d4afcd;*/
   /*border-top-color: thin;*/
   letter-spacing: 35px;
-  margin-top: 5px;
+  margin-top: 30px;
   background-color: black;
-  
+
   opacity: .7;
   width: 100%;
 }
@@ -64,7 +74,11 @@ p {
 
 #address {
   padding-bottom: 25px;
+}
+
+#address a {
   color: #EF2EF9;
+  letter-spacing: 7px;
 }
 
 ol {
@@ -74,6 +88,7 @@ ol {
 ul {
   list-style: none;
 }
+
 #wrapper {
   margin-left:10%;
   margin-right:10%;
@@ -85,8 +100,8 @@ ul {
   opacity: .7;
   /*width: 100%;*/
 }
-/*#EF2EF9 nice magenta color*/
 
-.address {
-  color: *#EF2EF9 ;
+button {
+  
 }
+/*#EF2EF9 nice magenta color*/
