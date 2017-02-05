@@ -1,43 +1,84 @@
+ul {
+  padding-left: 0;
+}
+
+header h1 {
+  border-top: solid 5px;
+  border-bottom: solid 5px;
+  font-size: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 body {
   font: helvetica, sans-serif;
   font-size: 20px;
+  font: helvetica, sans-serif;
+  font-size: 20px;
   text-align: center;
-  border: 15px dotted;
-  color: #63FBF4;
-  background-image:  url("https://mir-s3-cdn-cf.behance.net/project_modules/disp/3ac5b424607907.5633711d47ccf.jpg");
-  /*padding: 300px;*/
+  border: solid;
+  border-color: #d4afcd;
+  border-width: 10px;
+  color: #d4afcd;
+  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/3ac5b424607907.5633711d47ccf.jpg);
+  /* padding: 300px; */
   padding-top: 135px;
+  padding-bottom: 45px;
   background-color: rgb(255,255,255);
+  /*background-color: rgb(255,255,255);*/
+}
 
+body li strong {
+  letter-spacing: 5px;
 }
 
 h1 {
   font-family: Lucinda Console, sans-serif;
-  font-size: 65px;
+  text-align: center;
+  font-size: 45px;
+  /*border-style: solid;;
+  border-top-color: #d4afcd;
+  border-left: none;
+  border right: none;
+  border-top-width: thin;
+  border-bottom-color: #d4afcd;*/
+  /*border-top-color: thin;*/
   letter-spacing: 35px;
-  margin-top: 2px;
+  margin-top: 30px;
   background-color: black;
+
   opacity: .7;
   width: 100%;
+}
+#name {
+  border-width: thin;
+  border-color: #d4afcd;
+  border-left: none;
+  border-right: none;
 }
 
 h2 {
   font-family: Lucinda Console, sans-serif;
-  font-size: 40px;
+  font-size: 25px;
   letter-spacing: 15px;
   margin-top: 15px;
 }
 
 p {
+  /*text-align: center;*/
   padding-left: 75px;
   padding-right: 75px;
   opacity: 1;
   /*color: #EF2EF9;*/
 }
 
-address {
+#address {
   padding-bottom: 25px;
-  border-style: solid;
+}
+
+#address a {
+  color: #EF2EF9;
+  letter-spacing: 7px;
 }
 
 ol {
@@ -47,11 +88,20 @@ ol {
 ul {
   list-style: none;
 }
+
 #wrapper {
   margin-left:10%;
   margin-right:10%;
+  text-align: center;
   background-color: black;
+  border: solid;
+  border-color: #d4afcd;
+  border-width: 5px;
   opacity: .7;
   /*width: 100%;*/
+}
+
+button {
+  
 }
 /*#EF2EF9 nice magenta color*/
